@@ -5,6 +5,7 @@ import org.apache.commons.configuration.ConfigurationException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class UserTestRunner {
@@ -56,6 +57,42 @@ public class UserTestRunner {
     public void searchUserByRole() throws IOException {
         user = new User();
         user.callingSearchUserApiByRole();
+    }
+
+    @Test(priority = 8)
+    public void generateUser() throws ConfigurationException, IOException {
+        user = new User();
+        user.generateUser();
+    }
+
+    @Test(priority = 9)
+    public void createNewUser() throws IOException {
+        user = new User();
+        user.callingCreateUserApi();
+    }
+
+    @Test(priority = 10)
+    public void createExistingCustomer() throws IOException {
+        user = new User();
+        user.callingCreateExistingUserApi();
+    }
+
+    @Test(priority = 11)
+    public void updateUser() throws IOException {
+        user = new User();
+        user.callingUpdateUserApi();
+    }
+
+    @Test(priority = 12)
+    public void updateUserByProps() throws IOException {
+        user = new User();
+        user.callingUpdateUserByPropsApi();
+    }
+
+    @Test(priority = 13)
+    public void deleteUserWithInvalidID() throws IOException {
+        user = new User();
+        user.callingDeleteUSerInvIDApi();
     }
 
 
