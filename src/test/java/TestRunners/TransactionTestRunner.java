@@ -27,7 +27,7 @@ public class TransactionTestRunner {
         transaction.callingGetUserBalanceApi();
     }
 
-    @Test(priority = 3, enabled = false)
+    @Test(priority = 3)
     public void depositToUserAccount() throws IOException {
         transaction = new Transaction();
         transaction.callingDepositApi();
@@ -39,7 +39,7 @@ public class TransactionTestRunner {
         transaction.callingDepositInsufficientBalanceApi();
     }
 
-    @Test(priority = 5, enabled = false)
+    @Test(priority = 5)
     public void sendMoneyUserToUser() throws IOException {
         transaction = new Transaction();
         transaction.callingSendMoneyApi();
@@ -51,49 +51,49 @@ public class TransactionTestRunner {
         transaction.callingSendMoneyWithInsufficientBalanceApi();
     }
 
-    @Test(priority = 7, enabled = false)
+    @Test(priority = 7)
     public void sendMoneyFeeVerify() throws IOException {
         transaction = new Transaction();
         transaction.callingSendMoneyFeeVerificationApi();
     }
 
-    @Test(priority = 8, enabled = false)
+    @Test(priority = 8)
     public void cashOut() throws IOException {
         transaction = new Transaction();
         transaction.callingCashOutApi();
     }
 
-    @Test(priority = 8, enabled = false, description = "Cashout charge is fixed 10 taka upto 1000 taka")
+    @Test(priority = 9, description = "Cashout charge is fixed 10 taka upto 1000 taka")
     public void cashOutMinimumFee() throws IOException {
         transaction = new Transaction();
         transaction.callingCashOutMinimumFeeApi();
     }
 
-    @Test(priority = 9, enabled = false, description = "Cashout charge is fixed 10 taka upto 1000 taka & After 1000 CAshout charge is 1%")
+    @Test(priority = 10, description = "Cashout charge is fixed 10 taka upto 1000 taka & After 1000 CAshout charge is 1%")
     public void cashOutFee() throws IOException {
         transaction = new Transaction();
         transaction.callingCashOutFeeApi();
     }
 
-    @Test(priority = 10)
+    @Test(priority = 11)
     public void cashOutWithInsufficientBalance() throws IOException {
         transaction = new Transaction();
         transaction.callingCashInsufficientBalanceApi();
     }
 
-    @Test(priority = 11)
+    @Test(priority = 12)
     public void getStatementByAccountNumber() throws IOException {
         transaction = new Transaction();
         transaction.callingStatementByAccApi();
     }
 
-    @Test(priority = 12)
+    @Test(priority = 13)
     public void getStatementByTRNXID() throws IOException {
         transaction = new Transaction();
         transaction.callingStatementByTRNXApi();
     }
 
-    @Test(priority = 13)
+    @Test(priority = 14)
     public void getAllUserTransactionList() throws IOException {
         transaction = new Transaction();
         transaction.callingAllTransactionListApi();
