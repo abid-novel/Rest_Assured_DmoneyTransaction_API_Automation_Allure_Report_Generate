@@ -18,6 +18,8 @@ dependencies{
     implementation group: 'commons-configuration', name: 'commons-configuration', version: '1.10'
     // https://mvnrepository.com/artifact/org.testng/testng
     testImplementation group: 'org.testng', name: 'testng', version: '7.4.0'
+    // https://mvnrepository.com/artifact/io.qameta.allure/allure-testng
+    implementation group: 'io.qameta.allure', name: 'allure-testng', version: '2.17.2'
 }
 
 test {
