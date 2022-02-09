@@ -306,7 +306,7 @@ public class User {
         Assert.assertEquals(message,"User updated successfully");
     }
 
-    public void callingDeleteUSerInvIDApi() throws IOException {
+    public void callingDeleteUserInvIDApi() throws IOException {
         properties.load(file);
         RestAssured.baseURI = properties.getProperty("baseURL");
 

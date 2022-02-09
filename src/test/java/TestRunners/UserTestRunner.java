@@ -92,7 +92,7 @@ public class UserTestRunner {
     @Test(priority = 13)
     public void deleteUserWithInvalidID() throws IOException {
         user = new User();
-        user.callingDeleteUSerInvIDApi();
+        user.callingDeleteUserInvIDApi();
     }
 
 
