@@ -22,3 +22,5 @@ allure serve allure-results
 ```
 
 ## Screenshots of the Allure Report
+![1](https://user-images.githubusercontent.com/96170694/153255282-2014922d-46c7-4151-bb33-4753ecd3a544.JPG)
+![2](https://user-images.githubusercontent.com/96170694/153255299-50244662-d70d-44d7-9b7f-4cfe7cd6c5a9.JPG)
