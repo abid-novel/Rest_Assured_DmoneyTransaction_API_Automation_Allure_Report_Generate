@@ -1,0 +1,11 @@
+<suite thread-count="1" verbose="1" name="Dmoney Transaction API Automation">
+    <test name="Dmoney Transaction API Automation">
+        <classes>
+            <class name="TestRunners.UserTestRunner"/>
+        </classes>
+
+        <classes>
+            <class name="TestRunners.TransactionTestRunner"/>
+        </classes>
+    </test>
+</suite>
